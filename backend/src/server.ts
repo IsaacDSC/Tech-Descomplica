@@ -10,7 +10,7 @@ import { ApolloServer } from "apollo-server";
 //import { getAuth } from "./helpers";
 
 
-const PORT = 3000;
+const PORT = 3001;
 
 const schema = loadSchemaSync(join(__dirname, "./Modules/**/schema.graphql"), {
   loaders: [new GraphQLFileLoader()],
