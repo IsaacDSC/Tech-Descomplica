@@ -4,16 +4,22 @@ import { Card } from './student.style'
 export const Students = () => {
     return (
         <Card>
+           
             <section>
+                
                 <div className="container mt-5">
                     <div className="row">
                         <div className="col">
                             <div className="card" >
                                 {/* <img src="..." className="card-img-top" alt="..."> */}
                                 <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                                    <div className="container">
+                                        <hr />
+                                        <h5 className="card-title">Nome do aluno</h5>
+                                        <h5 className="card-text">Email</h5>
+                                        <h5>CPF</h5>
+                                    </div> 
+                                    <hr />                                  
                                 </div>
                             </div>
                         </div>
@@ -21,9 +27,13 @@ export const Students = () => {
                             <div className="card" >
                                 {/* <img src="..." className="card-img-top" alt="..."> */}
                                 <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                                    <div className="container">
+                                        <hr />
+                                        <h5 className="card-title">Nome do aluno</h5>
+                                        <h5 className="card-text">Email</h5>
+                                        <h5>CPF</h5>
+                                    </div>
+                                    <hr />                                    
                                 </div>
                             </div>
                         </div>
@@ -31,9 +41,13 @@ export const Students = () => {
                             <div className="card" >
                                 {/* <img src="..." className="card-img-top" alt="..."> */}
                                 <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                                    <div className="container">
+                                        <hr />
+                                        <h5 className="card-title">Nome do aluno</h5>
+                                        <h5 className="card-text">Email</h5>
+                                        <h5>CPF</h5>
+                                    </div>
+                                    <hr />                                    
                                 </div>
                             </div>
                         </div>
@@ -41,9 +55,13 @@ export const Students = () => {
                             <div className="card" >
                                 {/* <img src="..." className="card-img-top" alt="..."> */}
                                 <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" className="btn btn-primary">Go somewhere</a>
+                                    <div className="container">
+                                        <hr />
+                                        <h5 className="card-title">Nome do aluno</h5>
+                                        <h5 className="card-text">Email</h5>
+                                        <h5>CPF</h5>
+                                    </div>
+                                    <hr />                                    
                                 </div>
                             </div>
                         </div>

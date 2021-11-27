@@ -1,16 +1,31 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { gql, useQuery } from '@apollo/client'
+
+//import components
 import NavBar from '../components/nav/nav'
 import { Students } from '../components/students'
 import { Banner } from '../components/banner'
 import { AsideBar } from '../components/asidebar'
-/* import SafeEnviroment from '../components/feedback/safeEnviroment/safeEnviroment'
-import Banner from '../components/banner/home/banner'
-import NavHome from '../components/navigators/home/nav'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import FooterApp from '../components/footer/footer' */
+
+
+/* const AllLinksQuery = gql`
+  query GetStudents {
+  getStudents {
+    id
+    nome
+    CPF
+    email
+    status
+  }
+}
+`
+const data = useQuery(AllLinksQuery)
+{data} */
+
 
 const Home: NextPage = () => {
+
   return (
     <div>
       <Head>
