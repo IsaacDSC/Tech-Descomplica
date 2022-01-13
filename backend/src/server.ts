@@ -7,10 +7,9 @@ import { addResolversToSchema } from "@graphql-tools/schema";
 import { loadFilesSync } from "@graphql-tools/load-files";
 import { mergeResolvers } from "@graphql-tools/merge";
 import { ApolloServer } from "apollo-server";
-//import { getAuth } from "./helpers";
 
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 const schema = loadSchemaSync(join(__dirname, "./Modules/**/schema.graphql"), {
   loaders: [new GraphQLFileLoader()],
@@ -25,14 +24,6 @@ const schemaWithResolvers = addResolversToSchema({ schema, resolvers });
 const server = new ApolloServer({
   schema: schemaWithResolvers,
   healthCheckPath: "/status",
-//   context: async ({ req }) => {
-
-//    const token = req.headers.authorization;
-
-//    const user = await getAuth(token);
-
-//    return { user };
-//  },
   onHealthCheck: (req) => {
     return new Promise((resolve, reject) => {
       if (true) {
